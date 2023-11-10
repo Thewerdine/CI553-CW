@@ -18,6 +18,6 @@ public class BetterBasket extends Basket implements Serializable
   @Override
   public boolean add(Product pr)
   {
-	  return super.add(pr):
+	  return super.add(pr);
   }
 }
