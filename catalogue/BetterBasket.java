@@ -19,5 +19,6 @@ public class BetterBasket extends Basket implements Serializable
   public boolean add(Product pr)
   {
 	  return super.add(pr);
+	  //testtest
   }
 }
