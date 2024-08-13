@@ -56,14 +56,16 @@ public class Basket extends ArrayList<Product> implements Serializable
    */
   // Will be in the Java doc for Basket
   @Override
-  public boolean add(Product p1)
-  {
+  public boolean add(Product p1) {
+	  //search the existing products for a matching record
 	  for(Product p2: this) {
 		  if (p1.getProductNum().equals(p2.getProductNum())) {
+			  //found matching record, now update quantity and return
 			  p2.setQuantity(p2.getQuantity()+p1.getQuantity());
 			  return(true);
 		  }
 	  }
+	  //record not found and so add new product instead using superclass
 	  super.add(p1);
 	  return(true);
   }

@@ -53,6 +53,8 @@ public class PickView implements Observer
     rootWindow.setSize( W, H );                     // Size of Window
     rootWindow.setLocation( x, y );
     
+    cp.setBackground(Color.CYAN);
+    
     Font f = new Font("Monospaced",Font.PLAIN,12);  // Font f is
 
     theBtPicked.setBounds( 16, 25+60*0, 80, 40 );   // Check Button
